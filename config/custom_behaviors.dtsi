@@ -15,14 +15,6 @@
           quick-release;
         };
 
-        // Tap dance for shift (Shift/CapsWord)
-        td_shift: tap_dance_shift {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&skq RSHFT>, <&caps_word>;
-        };
-
         // Positional Homerow mods
         // Homerow mods that prevent accidental activations when rolling keys,
         // such as when typing `st` or `ne` on colemak-dh layouts or `as` on
