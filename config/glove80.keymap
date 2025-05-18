@@ -14,7 +14,6 @@
 
 #define HYPER LC(LS(LG(LALT)))
 
-// layers
 #define BASE 0
 #define NUM 1
 #define FN 2
@@ -81,34 +80,53 @@
     combos {
       compatible = "zmk,combos";
 
+      // Home: H + J
       combo_home {
           timeout-ms = <50>;
           key-positions = <40 41>;
           bindings = <&kp HOME>;
       };
 
+      // End: J + K
       combo_end {
           timeout-ms = <50>;
           key-positions = <41 42>;
           bindings = <&kp END>;
       };
 
+      // Page Up: U + I
       combo_pg_up {
           timeout-ms = <50>;
           key-positions = <29 30>;
           bindings = <&kp PG_UP>;
       };
 
+     // Page Down: M + ,
       combo_pg_dn {
           timeout-ms = <50>;
           key-positions = <59 60>;
           bindings = <&kp PG_DN>;
       };
 
+      // Caps Word: C + ,
       combo_caps_word {
           timeout-ms = <50>;
           key-positions = <49 60>;
           bindings = <&caps_word>;
+      };
+
+      // Enter: F + G
+      combo_enter {
+          timeout-ms = <50>;
+          key-positions = <38 39>;
+          bindings = <&kp RET>;
+      };
+
+      // Escape: D + F
+      combo_escape {
+          timeout-ms = <50>;
+          key-positions = <37 38>;
+          bindings = <&kp ESC>;
       };
 
     };
